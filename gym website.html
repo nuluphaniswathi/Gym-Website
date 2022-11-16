@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Belgrano&display=swap" rel="stylesheet">
+<style>
+	body{
+		color: gray;
+		margin: 0px;
+		padding:  0px;
+		background: url('img/s.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		
+		
+		font-family: 'Belgrano', serif;
+
+	
+
+	}
+	.left
+	{
+		display: inline-block;
+		
+		position: absolute;
+		left: 20px;
+		top: 20px;
+
+	}
+	.mid{
+		display: block;
+	
+		width: 50%;
+		margin: 20px auto;
+		background-color: gray;
+		border-radius: 10px;
+
+	}
+	.right
+	{
+		display: inline-block;
+		
+		position: absolute;
+		right: 40px;
+		top: 20px;
+
+
+	}
+	.navbar{
+		display: inline-block;
+	}
+	.navbar li
+	{
+		display: inline-block;
+		font-size: 15px;
+
+	}
+	.navbar li a{
+		text-decoration: none;
+		color: black;
+		padding: 2px 3px;
+	}
+	.navbar li a:hover, .navbar li a.active{
+		text-decoration:underline;
+		color: gray;
+		
+	}
+	.left img{
+		width: 80px;
+		height: 50px;
+		border-radius: 100%;
+		filter: invert(100%);
+		border: black;
+	}
+	.left div{
+		text-align: center;
+	}
+	.btn{
+		background-color: black;
+		color: white;
+		padding: 4px 14px;
+		margin: 2px auto;
+		border: 2px solid gray;
+		border-radius: 10px;
+		cursor: pointer;
+		font-family: 'Belgrano', serif;
+	}
+	.container{
+		border: 2px solid black;
+		margin:41px 11px;
+		padding: 54px 62px;
+		border-radius: 17px;
+		width: 23%;
+		bottom: 33%;
+		text-align: center;
+	}
+	.form-group-input{
+		padding: 6px 12px;
+		margin: 8px 8px;
+		border: 2px solid gray;
+		border-radius: 25px;
+		color: black;
+		font-family:'Belgrano', serif ;
+	}
+	.container h3{
+		text-align: center;
+		color: black;
+	}
+	.container button{
+		width: 50%;
+		margin: 6px 5px;
+		padding: 4px 25px;
+
+	}
+	p{
+		color: black;
+	}
+
+</style>
+<body>
+	<header class="header">
+		<!--left box for logo-->
+		<div class="left">
+			<img src="img/bac.jpg" alt="#">
+			<div>Fitness</div>
+		</div>
+		<!-- mid box for navbar-->
+		<div class="mid">
+			<ul class="navbar">
+				<li><a href="#">Home</a></li>
+				
+				<li>
+					<a href="#">Contact us</a>
+				</li>
+					<a href="#">Fitness calculator</a>
+				</li>
+				<li><a href="#">About us</a></li>
+			</ul>
+		</div>
+		<!-- right box for buttons -->
+		<div class="right">
+			<button class="btn">Call Us </button>
+			<button class="btn">Email Us</button>
+		</div>
+	</header>
+	<div class="container">
+		<h3>Join in Shalon gym now</h3><br><br>
+		<form action="nothing.php">
+			<p>Name:<input type="text" class="form-group-input"></input>
+			</p>
+			<p>Number:<input type="tel" class="form-group-input"></input></p>
+			
+			<p>Email:<input type="Email" class="form-group-input"></input></p>
+			<p>Age:<input type="text" class="form-group-input"></input></p>
+			
+			<button class="btn">submit</button>
+			
+		</form>
+	</div>
+
+</body>
+</html>
